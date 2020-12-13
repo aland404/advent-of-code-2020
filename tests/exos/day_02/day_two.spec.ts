@@ -2,7 +2,7 @@ import { expect } from 'chai'
 import {
   getSpecificInputPart, getFirstNumber, getSecondNumber,
   getLetter, getPassword, isOldWayPasswordOk, countValidPassword, isNewWayPasswordOk,
-} from '../../../src/exos/day_two/helperDayTwo'
+} from '../../../src/exos/day_02/helperDayTwo'
 import 'mocha'
 
 describe('day two part 1', () => {
@@ -53,6 +53,9 @@ describe('day two part 1', () => {
     })
     expect(nbValidPassword).equal(2)
   })
+})
+
+describe('day two part 2', () => {
   it('returns false, input does not match the new password policy', () => {
     const wrongPasswordInput = '2-5 a: bacda'
     const passwordOk = isNewWayPasswordOk(wrongPasswordInput)
