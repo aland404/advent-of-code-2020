@@ -1,8 +1,10 @@
 import { PUZZLE_INPUT as PUZZLE_INPUT_DAY_ONE } from './exos/day_01/inputs'
 import { PUZZLE_INPUT as PUZZLE_INPUT_DAY_TWO } from './exos/day_02/inputs'
+import { PUZZLE_INPUT as PUZZLE_INPUT_DAY_THREE } from './exos/day_03/inputs'
 
 import { findTwoTuples, findThreeTuples } from './exos/day_01/helperDayOne'
 import { countValidPassword, isOldWayPasswordOk, isNewWayPasswordOk } from './exos/day_02/helperDayTwo'
+import { countNumberOfThree } from './exos/day_03/helperDayThree'
 
 function resolveExoDayOne() {
   console.info('__Day One__')
@@ -25,5 +27,17 @@ function resolveExoDayTwo() {
   }))
 }
 
+function resolveExoDayThree() {
+  console.info('__Day Three__')
+  console.log('part 1:', countNumberOfThree(PUZZLE_INPUT_DAY_THREE, 3, 1))
+
+  console.log('part 2:', countNumberOfThree(PUZZLE_INPUT_DAY_THREE, 1, 1)
+  * countNumberOfThree(PUZZLE_INPUT_DAY_THREE, 3, 1)
+  * countNumberOfThree(PUZZLE_INPUT_DAY_THREE, 5, 1)
+  * countNumberOfThree(PUZZLE_INPUT_DAY_THREE, 7, 1)
+  * countNumberOfThree(PUZZLE_INPUT_DAY_THREE, 1, 2))
+}
+
 resolveExoDayOne()
 resolveExoDayTwo()
+resolveExoDayThree()
