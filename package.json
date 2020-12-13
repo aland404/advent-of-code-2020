@@ -6,7 +6,7 @@
     "scripts": {
         "start": "ts-node src/index.ts",
         "test": "mocha -r ts-node/register tests/**/*.spec.ts",
-        "lint": "eslint --fix src/**/*"
+        "lint": "eslint --fix src/**/*.ts"
     },
     "repository": {
         "type": "git",
