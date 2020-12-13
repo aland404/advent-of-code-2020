@@ -1,8 +1,8 @@
-import { PUZZLE_INPUT as PUZZLE_INPUT_DAY_ONE } from './exos/day_one/inputs'
-import { PUZZLE_INPUT as PUZZLE_INPUT_DAY_TWO } from './exos/day_two/inputs'
+import { PUZZLE_INPUT as PUZZLE_INPUT_DAY_ONE } from './exos/day_01/inputs'
+import { PUZZLE_INPUT as PUZZLE_INPUT_DAY_TWO } from './exos/day_02/inputs'
 
-import { findTwoTuples, findThreeTuples } from './exos/day_one/helperDayOne'
-import { countValidPassword, isOldWayPasswordOk, isNewWayPasswordOk } from './exos/day_two/helperDayTwo'
+import { findTwoTuples, findThreeTuples } from './exos/day_01/helperDayOne'
+import { countValidPassword, isOldWayPasswordOk, isNewWayPasswordOk } from './exos/day_02/helperDayTwo'
 
 function resolveExoDayOne() {
   console.info('__Day One__')

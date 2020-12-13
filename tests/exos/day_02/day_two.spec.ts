@@ -2,7 +2,7 @@ import { expect } from 'chai'
 import {
   getSpecificInputPart, getFirstNumber, getSecondNumber,
   getLetter, getPassword, isOldWayPasswordOk, countValidPassword, isNewWayPasswordOk,
-} from '../../../src/exos/day_two/helperDayTwo'
+} from '../../../src/exos/day_02/helperDayTwo'
 import 'mocha'
 
 describe('day two part 1', () => {

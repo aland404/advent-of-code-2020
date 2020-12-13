@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import { findTwoTuples, findThreeTuples } from '../../../src/exos/day_one/helperDayOne'
+import { findTwoTuples, findThreeTuples } from '../../../src/exos/day_01/helperDayOne'
 import 'mocha'
 
 describe('day one part 1', () => {
